@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+}
+
+.sample-data {
+  border: solid thin gray;
+  height: 110px;
+  overflow: auto;
+  margin: 10px 0px;
+}
+.chart {
+  border: solid thin gray;
+  height: 250px;
+  overflow: auto;
+}
