@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
 
-import { JsonView, defaultStyles } from "react-json-view-lite";
 import "react-json-view-lite/dist/index.css";
 
-import { generateVibrationData, VibrationSeriesType } from "./generateData";
+import { defaultStyles, JsonView } from "react-json-view-lite";
 import { ChartComponent } from "./ChartComponent";
+import { generateVibrationData, VibrationSeriesType } from "./generateData";
 export default function App() {
   const [vibrationData, setVibrationData] = useState<VibrationSeriesType>();
   useEffect(() => {
@@ -17,6 +17,7 @@ export default function App() {
   }
   return (
     <div className="App">
+    
       <h3>3d Plotting of Vibration Data</h3>
       <span>
         <b>Raw data:</b>
